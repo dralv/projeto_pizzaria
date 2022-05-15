@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vendas de Pizza</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <h1>Comunidade Boa Esperança</h1>
+        </li>
+        <li>
+          <h2>Vendas de Pizza</h2>
+        </li>
+      </ul>
+    </header>
+
+    <section>
+      
+      <form action="">
+        <ul>
+          <h3>Seleciona a pizza que foi vendida</h3>
+          <li>
+            <label for="mussarela">Mussarela</label>
+            <input type="radio" id="mussarela" name="pizzas" />
+          </li>
+          <li>
+            <label for="mista">Mista</label>
+            <input type="radio" name="pizzas" id="mista" />
+          </li>
+          <li>
+            <label for="calabresa">Calabresa</label>
+            <input type="radio" id="calabresa" name="pizzas" />
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <section>
+      <button id="vendas">Vendas</button><button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+      <table>
+        <tr>
+          <th>Sabores</th>
+          <th>Quantidade</th>
+          <th>Valores</th>
+        </tr>
+        <tr>
+          <td>Mussarela</td>
+          <td id="resultadoMussarela"></td>
+          <td id="vendaMussarela"></td>
+        </tr>
+        <tr>
+          <td>Mista</td>
+          <td id="resultadoMista"></td>
+          <td id="vendaMista"></td>
+        </tr>
+        <tr>
+          <td>Calabresa</td>
+          <td id="resultadoCalabresa"></td>
+          <td id="vendaCalabresa"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <button id="export">Planilha</button>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="./main.js"></script>
+    
+  </body>
+</html>
